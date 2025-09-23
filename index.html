@@ -3,7 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Fundacion Reavolución Ciudadana</title>
+  <title>Fundación Revolución Ciudadana | Participación y Acción Social</title>
+  <meta name="description" content="Fundación Revolución Ciudadana: Movimiento por la participación activa y defensa de derechos. Únete y participa en actividades, foros y campañas locales.">
+  <meta name="keywords" content="Fundación, Revolución Ciudadana, Participación, Derechos, Comunidad, Acción Social">
+  <link rel="canonical" href="https://revolucion-ciudadana.github.io/revolucion-ciudadana2/">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fundación Revolución Ciudadana">
+  <meta property="og:description" content="Únete a la Fundación Revolución Ciudadana y participa en actividades sociales y comunitarias.">
+  <meta property="og:image" content="banner.jpg">
+  <meta property="og:url" content="https://revolucion-ciudadana.github.io/revolucion-ciudadana2/">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fundación Revolución Ciudadana">
+  <meta name="twitter:description" content="Únete a la Fundación Revolución Ciudadana y participa en actividades sociales y comunitarias.">
+  <meta name="twitter:image" content="banner.jpg">
+
   <style>
     :root{
       --primary:#b71c1c;
@@ -20,24 +35,21 @@
       color:var(--dark);
       line-height:1.5;
     }
-
-   /* HEADER */
-header{
-  background: url("banner.jpg") no-repeat center center;
-  background-size: cover;
-  color: var(--white);
-  padding: 18px;
-}
-.header-inner{
-  max-width: var(--maxw);
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 6px;
-  background:none; /* sin fondo */
-}
-
+    header{
+      background: url("banner.jpg") no-repeat center center;
+      background-size: cover;
+      color: var(--white);
+      padding: 18px;
+    }
+    .header-inner{
+      max-width: var(--maxw);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 6px;
+      background:none;
+    }
     #logo-img{
       height:100px;
       width:100px;
@@ -53,8 +65,6 @@ header{
     }
     .site-title h1{ margin:0; font-size:1.5rem; letter-spacing:0.5px;}
     .site-title p{ margin:4px 0 0; font-size:0.95rem; opacity:0.95; }
-
-    /* NAV */
     nav{
       background:#2a2a2a;
       padding:10px 0;
@@ -64,35 +74,25 @@ header{
       color:white; text-decoration:none;
       margin:0 12px; font-weight:700;
     }
-
-    /* MAIN */
     main{ max-width:var(--maxw); margin:18px auto; padding:0 18px; }
-
     .hero{
       background:white; padding:28px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06);
       display:flex; gap:20px; align-items:center; flex-wrap:wrap;
     }
     .hero .text{ flex:1; min-width:240px }
     .hero .cta{ margin-top:12px }
-
     section{ margin-top:28px }
     h2{ color:var(--primary); margin-bottom:10px }
-
-    /* LÍDERES */
     .equipo{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-top:12px; }
     .miembro{
       background:white; padding:12px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06);
       text-align:center;
     }
     .miembro img{ width:100%; height:180px; object-fit:cover; border-radius:8px; }
-
-    /* NOTICIAS */
     .noticias-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:12px; }
     .card{ background:white; border-radius:10px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
     .card img{ width:100%; height:150px; object-fit:cover; display:block; }
     .card .card-body{ padding:12px; }
-
-    /* CONTACTO */
     .contact-card{ background:white; padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
     form{ display:flex; flex-direction:column; gap:10px; }
     input, textarea, button{
@@ -100,13 +100,8 @@ header{
     }
     button{ background:var(--primary); color:white; border:none; cursor:pointer; }
     button:hover{ background:#922; }
-
     #form-status{ display:none; font-weight:700; margin-top:8px; }
-
-    /* FOOTER */
     footer{ margin-top:28px; background:#222; color:white; padding:14px; text-align:center; }
-
-    /* responsive tweaks */
     @media (max-width:600px){
       .header-inner{padding:8px}
       .site-title h1{ font-size:1.15rem }
@@ -119,10 +114,8 @@ header{
 
   <header>
     <div class="header-inner">
-      <!-- Logo externo (sube logo.png al repo root). Si no existe, el onerror oculta la img y muestra el SVG -->
       <img id="logo-img" src="logo.png" alt="Logo Revolución Ciudadana"
            onerror="this.style.display='none'; document.getElementById('svgLogo').style.display='inline-block'">
-      <!-- SVG fallback (inline) -->
       <svg id="svgLogo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect width="100" height="100" rx="12" fill="#fff"/>
         <path d="M16 62 L40 28 L64 62 Z" fill="#b71c1c" />
@@ -130,7 +123,7 @@ header{
       </svg>
 
       <div class="site-title">
-        <h1>Fundacion Revolución Ciudadana</h1>
+        <h1>Fundación Revolución Ciudadana</h1>
         <p>por un pueblo unido</p>
       </div>
     </div>
@@ -147,135 +140,83 @@ header{
   </nav>
 
   <main>
-    <!-- HERO -->
     <div id="inicio" class="hero">
       <div class="text">
         <h2>Bienvenidos</h2>
-        <p>La Fundacion Revolución Ciudadana es un movimiento por la participación activa y la defensa de derechos. Únete y participa en nuestras actividades, foros y campañas locales.</p>
+        <p>La Fundación Revolución Ciudadana es un movimiento por la participación activa y la defensa de derechos. Únete y participa en nuestras actividades, foros y campañas locales.</p>
         <div class="cta">
           <a href="#contacto" style="display:inline-block;padding:10px 14px;background:var(--primary);color:white;border-radius:8px;text-decoration:none;">Únete</a>
         </div>
       </div>
       <div class="img" style="min-width:220px;">
-        <!-- Imagen hero opcional (subir hero.jpg) -->
         <img src="hero.jpg" alt="Acción ciudadana" style="width:240px;height:140px;object-fit:cover;border-radius:8px;" onerror="this.style.display='none'">
       </div>
     </div>
 
-    <!-- QUIENES SOMOS -->
     <section id="quienes">
       <h2>Quiénes Somos</h2>
-      <p><strong>Misión:</strong>La Fundación revolucion ciudadana es una entidad sin animo de lucro, cuya misión es mejorar la calidad de vida de las personas en extrema pobreza, desplazados y con discapacidad intelectual y sus familias por medio de una atención integral personalizada, así como la formulación, gestión y ejecución de proyectos sociales en el sector de la construcción, contribuyendo así a una asistencia social y comunitaria con sentido humanista.</p>
-      <p><strong>Visión:</strong> La Fundación revolucion ciudadana, pretende ser una entidad de referencia, por ello será reconocida en el año 2030 en el ámbito de la construcción, la educación y la discapacidad intelectual que cubra las necesidades de las personas adultas en extrema pobreza, desplazados y con discapacidad, cuya manera de actuar se basa en la integralidad, la eficacia y la transparencia en el servicio, la calidad y el interés general.</p>
+      <p><strong>Misión:</strong> La Fundación Revolución Ciudadana es una entidad sin ánimo de lucro, cuya misión es mejorar la calidad de vida de las personas en extrema pobreza, desplazados y con discapacidad intelectual y sus familias mediante atención integral y proyectos sociales en construcción.</p>
+      <p><strong>Visión:</strong> Ser reconocida para 2030 en construcción, educación y discapacidad, basada en integralidad, eficacia, transparencia, calidad e interés general.</p>
     </section>
 
-    <!-- LÍDERES -->
     <section id="equipo">
       <h2>Nuestro Equipo</h2>
       <div class="equipo">
-        <div class="miembro">
-          <img src="lider1.jpg" alt="Líder 1" onerror="this.src='https://via.placeholder.com/400x300?text=Sin+imagen'">
-          <h3>Nombre del Líder 1</h3>
-        </div>
-        <div class="miembro">
-          <img src="lider2.jpg" alt="Líder 2" onerror="this.src='https://via.placeholder.com/400x300?text=Sin+imagen'">
-          <h3>Nombre del Líder 2</h3>
-        </div>
-        <div class="miembro">
-          <img src="lider3.jpg" alt="Líder 3" onerror="this.src='https://via.placeholder.com/400x300?text=Sin+imagen'">
-          <h3>Nombre del Líder 3</h3>
-        </div>
-      <div class="miembro">
-          <img src="lider3.jpg" alt="Líder 3" onerror="this.src='https://via.placeholder.com/400x300?text=Sin+imagen'">
-          <h3>Nombre del Líder 4</h3>
-        </div>
-       <div class="miembro">
-          <img src="lider3.jpg" alt="Líder 3" onerror="this.src='https://via.placeholder.com/400x300?text=Sin+imagen'">
-          <h3>Nombre del Líder 5</h3>
-        </div>
-       <div class="miembro">
-          <img src="lider3.jpg" alt="Líder 3" onerror="this.src='https://via.placeholder.com/400x300?text=Sin+imagen'">
-          <h3>Nombre del Líder 6</h3>
-        </div>
-       <div class="miembro">
-          <img src="lider3.jpg" alt="Líder 3" onerror="this.src='https://via.placeholder.com/400x300?text=Sin+imagen'">
-          <h3>Nombre del Líder 7</h3>
-        </div>
-         </div>
-    </section>
-
-    <!-- NOTICIAS -->
-    <section id="noticias">
-      <h2>Noticias y Actualidad</h2>
-      <div class="noticias-grid">
-        <div class="card">
-          <img src="noticia1.jpg" alt="Noticia 1" onerror="this.src='https://via.placeholder.com/600x400?text=Noticia'">
-          <div class="card-body">
-            <h3>Campaña de limpieza comunitaria</h3>
-            <p>Realizamos una jornada de limpieza en el barrio el sábado pasado con gran participación ciudadana.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="noticia2.jpg" alt="Noticia 2" onerror="this.src='https://via.placeholder.com/600x400?text=Noticia'">
-          <div class="card-body">
-            <h3>Foro sobre participación juvenil</h3>
-            <p>Un foro abierto para jóvenes interesados en participar en procesos locales de toma de decisiones.</p>
-          </div>
-        </div>
+        <div class="miembro"><img src="lider1.jpg" alt="Líder 1"><h3>Nombre del Líder 1</h3></div>
+        <div class="miembro"><img src="lider2.jpg" alt="Líder 2"><h3>Nombre del Líder 2</h3></div>
+        <div class="miembro"><img src="lider3.jpg" alt="Líder 3"><h3>Nombre del Líder 3</h3></div>
+        <div class="miembro"><img src="lider3.jpg" alt="Líder 4"><h3>Nombre del Líder 4</h3></div>
+        <div class="miembro"><img src="lider3.jpg" alt="Líder 5"><h3>Nombre del Líder 5</h3></div>
+        <div class="miembro"><img src="lider3.jpg" alt="Líder 6"><h3>Nombre del Líder 6</h3></div>
+        <div class="miembro"><img src="lider3.jpg" alt="Líder 7"><h3>Nombre del Líder 7</h3></div>
       </div>
     </section>
 
-    <!-- CONTACTO -->
+    <section id="noticias">
+      <h2>Noticias y Actualidad</h2>
+      <div class="noticias-grid">
+        <div class="card"><img src="noticia1.jpg" alt="Noticia 1"><div class="card-body"><h3>Campaña de limpieza comunitaria</h3><p>Realizamos una jornada de limpieza con gran participación ciudadana.</p></div></div>
+        <div class="card"><img src="noticia2.jpg" alt="Noticia 2"><div class="card-body"><h3>Foro sobre participación juvenil</h3><p>Foro abierto para jóvenes interesados en participar en procesos locales de toma de decisiones.</p></div></div>
+      </div>
+    </section>
+
     <section id="contacto">
       <h2>Contacto</h2>
       <div class="contact-card">
         <p>Déjanos tu mensaje y nos pondremos en contacto contigo.</p>
-
         <form id="contact-form" action="https://formspree.io/f/manpwpeq" method="POST">
           <input type="text" name="name" placeholder="Nombre" required>
           <input type="email" name="email" placeholder="Correo" required>
           <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
           <button type="submit">Enviar</button>
         </form>
-
         <div id="form-status"></div>
       </div>
     </section>
   </main>
 
   <footer>
-  <p>Síguenos en nuestras redes:</p>
-  <a href="https://chat.whatsapp.com/IPRyNK3K5cSE9tWhfjuqMx?mode=ems_share_c" target="_blank" style="color:#25D366; margin:0 10px; font-size:30px;">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <a href="https://youtube.com/@TUCANAL" target="_blank" style="color:#FF0000; margin:0 10px; font-size:30px;">
-    <i class="fab fa-youtube"></i>
-  </a>
-  <a href="https://www.facebook.com/share/p/14LSpXk4XEU/" target="_blank" style="color:#1877F2; margin:0 10px; font-size:30px;">
-    <i class="fab fa-facebook"></i>
-  </a>
-</footer>
-
+    <p>Síguenos en nuestras redes:</p>
+    <a href="https://chat.whatsapp.com/IPRyNK3K5cSE9tWhfjuqMx?mode=ems_share_c" target="_blank" style="color:#25D366; margin:0 10px; font-size:30px;"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://youtube.com/@TUCANAL" target="_blank" style="color:#FF0000; margin:0 10px; font-size:30px;"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/share/p/14LSpXk4XEU/" target="_blank" style="color:#1877F2; margin:0 10px; font-size:30px;"><i class="fab fa-facebook"></i></a>
+    <p style="margin-top:10px; font-size:14px;">© 2025 Hecho por Johan</p>
+  </footer>
 
   <script>
-    // Formspree AJAX submit (muestra mensaje en la misma página)
     const form = document.getElementById('contact-form');
     const status = document.getElementById('form-status');
-
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.style.display = 'block';
       status.textContent = 'Enviando...';
       const data = new FormData(form);
-
       try {
         const res = await fetch(form.action, {
           method: form.method,
           body: data,
           headers: { 'Accept': 'application/json' }
         });
-
         if (res.ok) {
           form.reset();
           status.style.color = 'green';
@@ -292,6 +233,7 @@ header{
   </script>
 </body>
 </html>
+
 
 
 
