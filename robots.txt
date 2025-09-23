@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://revolucion-ciudadana.github.io/revolucion-ciudadana2/sitemap.xml
